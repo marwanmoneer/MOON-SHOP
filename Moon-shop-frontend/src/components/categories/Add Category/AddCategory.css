@@ -1,0 +1,199 @@
+/* Styles for the dashboard container */
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+.dash-container-1 {
+  margin-left: 50px;
+  margin-top: 50px;
+  background: #fff;
+  width: 90%;
+  padding: 25px 40px 10px 40px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the header text */
+.dash-container-1 .text {
+  text-align: center;
+  font-size: 41px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  background: -webkit-linear-gradient(
+    right,
+    #56d8e4,
+    #9f01ea,
+    #56d8e4,
+    #9f01ea
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Styles for the form within the dashboard container */
+.dash-container-1 form {
+  padding: 30px 0 0 0;
+}
+
+/* Styles for form rows within the form */
+.dash-container-1 form .form-row {
+  display: flex;
+  margin: 32px 0;
+}
+
+/* Styles for input data fields within form rows */
+form .form-row .input-data {
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+}
+
+/* Styles for textarea input within form rows */
+form .form-row .textarea {
+  height: 70px;
+}
+
+/* Styles for general input and textarea fields */
+.input-data input,
+.textarea textarea {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+}
+
+/* Styles for color input field */
+.input-color {
+  width: 150px;
+  height: 100px;
+  border: none;
+  background: #fff;
+}
+
+/* Styles for the color label */
+#lable-color {
+  margin-top: -20px;
+  margin-left: -115px;
+  font-size: 17px;
+}
+
+/* Styles for focused or valid input and textarea fields */
+.input-data input:focus ~ label,
+.textarea textarea:focus ~ label,
+.input-data input:valid ~ label,
+.textarea textarea:valid ~ label {
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #3498db;
+}
+
+/* Styles for textarea input */
+.textarea textarea {
+  resize: none;
+  padding-top: 10px;
+}
+
+/* Styles for labels within input data fields */
+.input-data label {
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+/* Styles for labels within textarea fields */
+.textarea label {
+  width: 100%;
+  bottom: 40px;
+  background: #fff;
+}
+
+/* Styles for the underline effect within input data fields */
+.input-data .underline {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+
+/* Styles for the underline effect before focus or valid input */
+.input-data .underline:before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #3498db;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+/* Styles for the underline effect after focus or valid input */
+.input-data input:focus ~ .underline:before,
+.input-data input:valid ~ .underline:before,
+.textarea textarea:focus ~ .underline:before,
+.textarea textarea:valid ~ .underline:before {
+  transform: scale(1);
+}
+
+/* Styles for the submit button */
+.submit-btn .input-data {
+  overflow: hidden;
+  height: 45px !important;
+  width: 25% !important;
+}
+
+/* Styles for the inner gradient effect on hover */
+.submit-btn .input-data .inner {
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  background: -webkit-linear-gradient(
+    right,
+    #56d8e4,
+    #9f01ea,
+    #56d8e4,
+    #9f01ea
+  );
+  transition: all 0.4s;
+}
+
+/* Styles for the inner gradient effect on button hover */
+.submit-btn .input-data:hover .inner {
+  left: 0;
+}
+
+/* Styles for the submit button text */
+.submit-btn .input-data input {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 700px) {
+  .dash-container-1 .text {
+    font-size: 30px;
+  }
+  .dash-container-1 form {
+    padding: 10px 0 0 0;
+  }
+  .dash-container-1 form .form-row {
+    display: block;
+  }
+  form .form-row .input-data {
+    margin: 35px 0 !important;
+  }
+  .submit-btn .input-data {
+    width: 40% !important;
+  }
+}

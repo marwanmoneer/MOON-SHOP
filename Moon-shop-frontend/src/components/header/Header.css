@@ -1,0 +1,97 @@
+/* Navbar styles for desktop */
+
+.navbar {
+  background-color: #0d67b5; /* Background color for the navbar */
+  padding: 0; /* Remove default padding */
+  width: 100%; /* Full width of the navbar */
+  transition: background-color 0.3s; /* Smooth transition effect for background color */
+}
+
+.navbar-container {
+  display: flex; /* Arrange elements in a row */
+  justify-content: space-between; /* Space evenly between elements */
+  align-items: center; /* Center align items vertically */
+  max-width: 1200px; /* Maximum width of the navbar container */
+  margin: 0 auto; /* Center the container */
+  padding: 0 20px; /* Add padding to the container */
+}
+
+.navbar-logo {
+  color: #fff; /* Text color for the logo */
+  font-size: 1.5rem; /* Font size for the logo */
+  text-decoration: none; /* Remove underline from the logo */
+}
+
+.menu-icon {
+  display: none; /* Hide the menu icon by default on desktop */
+  cursor: pointer; /* Set cursor to pointer */
+  color: #fff; /* Color of the menu icon */
+  font-size: 1.5rem; /* Font size of the menu icon */
+}
+
+.nav-menu {
+  list-style: none; /* Remove default list styles */
+  display: flex; /* Arrange menu items in a row */
+  align-items: center; /* Center align items vertically */
+}
+
+.nav-item {
+  margin-right: 20px; /* Add margin between navigation items */
+}
+
+.nav-link {
+  color: #fff; /* Text color for navigation links */
+  text-decoration: none; /* Remove underline from navigation links */
+  font-size: 1rem; /* Font size for navigation links */
+  transition: color 0.3s; /* Smooth transition effect for color change on hover */
+}
+
+.nav-link:hover {
+  color: #ffcc00; /* Text color on hover */
+}
+
+.logo {
+  width: 70px; /* Set width for the logo */
+}
+
+.cart-items {
+  background-color: #ffcc00; /* Background color for cart items */
+  color: #333; /* Text color for cart items */
+  border-radius: 50%; /* Border radius for circular shape */
+  padding: 0.25rem 0.5rem; /* Padding for cart items */
+  font-size: 0.6rem; /* Font size for cart items */
+}
+
+.cart_icon {
+  font-size: 20px; /* Font size for the cart icon */
+}
+
+/* Responsive styles for mobile */
+
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block; /* Display the menu icon on smaller screens */
+  }
+
+  .nav-menu {
+    flex-direction: column; /* Stack menu items vertically on smaller screens */
+    width: 100%; /* Full width for the mobile menu */
+    position: absolute; /* Position the menu absolutely */
+    top: 60px; /* Distance from the top */
+    left: 0; /* Align to the left */
+    background-color: #0d67b5; /* Background color for the mobile menu */
+    padding: 10px; /* Padding for the mobile menu */
+    text-align: center; /* Center align text */
+    display: none; /* Hide the menu by default */
+    margin-top: 35px; /* Margin from the top */
+  }
+
+  .nav-item {
+    margin-right: 0; /* Remove margin for navigation items on smaller screens */
+    margin-bottom: 10px; /* Add bottom margin for spacing */
+  }
+
+  .active {
+    display: flex; /* Display the mobile menu on active state */
+  }
+}

@@ -1,0 +1,17 @@
+.dashboard-layout {
+    display: flex;
+    flex-direction: row;
+    background: -webkit-linear-gradient(left, #0d67b5, #25b7c4);
+    background: linear-gradient(to right, #0d67b5, #25b7c4);
+  
+}
+  
+.dashboard-layout-items {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    overflow: auto;
+    margin-left: 20px;
+  
+  }
+  

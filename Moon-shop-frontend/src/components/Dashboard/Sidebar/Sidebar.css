@@ -1,0 +1,88 @@
+/* Sidebar Styles */
+
+/* Sidebar Container */
+.sidebar {
+  color: #fff; /* Text color */
+  width: 250px; /* Sidebar width */
+  padding-left: 20px; /* Left padding */
+  height: 100%; /* Full height */
+  background-image: linear-gradient(30deg, #0048bd, #0d67b5); /* Gradient background */
+  border-top-right-radius: 80px; /* Top right border radius */
+}
+
+/* Sidebar Links */
+.sidebar a {
+  font-size: 15px; /* Font size */
+  color: #fff; /* Text color */
+  display: block;
+  padding: 12px;
+  padding-left: 30px; /* Left padding for icons */
+  text-decoration: none; /* Remove underlines */
+  -webkit-tap-highlight-color: transparent; /* Disable tap highlight color */
+}
+
+/* Hover effect for Sidebar Links */
+.sidebar a:hover {
+  color: #3f5efb; /* Hover text color */
+  background: #fff; /* Hover background color */
+  outline: none; /* Remove outline */
+  position: relative;
+  background-color: #fff; /* Hover background color */
+  border-top-left-radius: 20px; /* Top left border radius */
+  border-bottom-left-radius: 20px; /* Bottom left border radius */
+}
+
+/* Sidebar Icon Styles */
+.sidebar a .side-icon {
+  margin-right: 5px; /* Margin for icons */
+}
+
+/* Hover effect for Sidebar Links - After */
+.sidebar a:hover::after {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  bottom: 100%;
+  right: 0;
+  height: 35px;
+  width: 35px;
+  border-bottom-right-radius: 18px;
+  box-shadow: 0 20px 0 0 #fff; /* Shadow effect */
+}
+
+/* Hover effect for Sidebar Links - Before */
+.sidebar a:hover::before {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  top: 38px;
+  right: 0;
+  height: 35px;
+  width: 35px;
+  border-top-right-radius: 18px;
+  box-shadow: 0 -20px 0 0 #fff; /* Shadow effect */
+}
+
+/* Sidebar Heading */
+.sidebar p {
+  color: #fff; /* Text color */
+  margin: 0;
+  padding: 40px 0; /* Padding for the heading */
+  font-size: 20px; /* Heading font size */
+}
+
+/* Sidebar Divider Line */
+.sid-br {
+  border-bottom: #fff solid 1px; /* Divider line color and thickness */
+  margin: 10px; /* Margin around the divider */
+}
+
+/* Active Link Style */
+.active {
+  color: red; /* Active link text color */
+  background: #fff; /* Active link background color */
+  border-top-left-radius: 20px; /* Top left border radius for active link */
+  border-bottom-left-radius: 20px; /* Bottom left border radius for active link */
+}
+
+/* End of Sidebar.css */

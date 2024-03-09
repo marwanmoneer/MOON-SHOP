@@ -1,0 +1,90 @@
+/* Footer Styles */
+
+/* Footer Container */
+.footer {
+  background-color: #0d67b5; /* Background color */
+  color: wheat; /* Text color */
+  padding: 3rem 0; /* Padding for the footer */
+  text-align: center; /* Center-align text */
+}
+
+/* Footer Logo Styles */
+.footer-logo {
+  width: 70px; /* Logo width */
+}
+
+/* Footer Container Styles */
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px; /* Maximum width for the container */
+  margin: 0 auto; /* Center the container */
+}
+
+/* Footer Links List Styles */
+.footer-links {
+  list-style: none; /* Remove list styling */
+  display: flex;
+  margin-top: 1rem; /* Top margin for the links */
+  padding: 0; /* Remove default padding */
+}
+
+/* Footer Link Styles */
+.footer-link {
+  margin: 0 15px; /* Margin between links */
+  font-size: 1rem; /* Font size for links */
+  text-decoration: none; /* Remove underlines */
+  color: wheat; /* Link text color */
+  transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+/* Hover effect for Footer Links */
+.footer-link:hover {
+  color: #ffcc00; /* Hover text color */
+}
+
+/* Footer Social Icons Styles */
+.footer-social {
+  margin-top: 1.5rem; /* Top margin for social icons */
+}
+
+/* Footer Social Icon Link Styles */
+.footer-social-link {
+  display: inline-block;
+  margin: 0 10px; /* Margin between social icons */
+  font-size: 1.5rem; /* Font size for social icons */
+  color: wheat; /* Social icon color */
+  text-decoration: none; /* Remove underlines */
+  transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+/* Hover effect for Footer Social Icons */
+.footer-social-link:hover {
+  color: #ffcc00; /* Hover color for social icons */
+}
+
+/* Footer Copyright Styles */
+.footer-copyright {
+  margin-top: 1rem; /* Top margin for copyright text */
+  color: #fff; /* Copyright text color */
+  font-size: 0.9rem; /* Font size for copyright text */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  /* Adjustments for small screens */
+
+  .footer-links {
+    flex-direction: column; /* Stack links vertically on small screens */
+    margin-top: 1rem;
+  }
+
+  .footer-link {
+    margin: 10px 0; /* Margin for stacked links */
+  }
+
+  .footer-social {
+    margin-top: 1rem; /* Top margin for social icons on small screens */
+  }
+}

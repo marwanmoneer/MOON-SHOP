@@ -1,0 +1,131 @@
+/* Button style */
+.btn {
+  /* General button styling */
+  position: relative;
+  background-color: #0d67b5;
+  border-radius: 5px;
+  box-shadow: #043b6b 0px 4px 0px 0px;
+  padding: 15px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 154px;
+  height: 49px;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+  overflow: hidden;
+  margin: 5px;
+}
+
+.btn::before {
+  /* Pseudo-element for the animated background effect */
+  content: "";
+  background-color: #106ec0;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: width 700ms ease-in-out;
+  display: inline-block;
+}
+
+.btn:hover::before {
+  /* Animation effect on hover */
+  width: 100%;
+}
+
+/* Message styles for different types */
+.info-msg,
+.success-msg,
+.warning-msg,
+.error-msg {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 3px 3px 3px 3px;
+}
+
+.info-msg {
+  color: #059;
+  background-color: #bef;
+}
+
+.success-msg {
+  color: #270;
+  background-color: #dff2bf;
+}
+
+.warning-msg {
+  color: #9f6000;
+  background-color: #feefb3;
+}
+
+.error-msg {
+  color: #d8000c;
+  background-color: #ffbab0;
+}
+
+/* Back button styles for normal and dashboard views */
+.back-btn,
+.back-btn-dash {
+  font-size: 20px;
+  padding: 4px;
+  padding-top: 8px;
+}
+
+/* Hover styles for back buttons */
+.back-btn:hover {
+  border: solid 1px #0d67b5;
+  border-radius: 50%;
+  color: #0d67b5;
+}
+
+.back-btn-dash:hover {
+  border: solid 1px #fff;
+  border-radius: 50%;
+  color: #fff;
+}
+
+/* Dropzone styles for file upload */
+.dropzone {
+  border: 2px dashed #cccccc;
+  border-radius: 4px;
+  background-color: #fafafa;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.dropzone.active {
+  border-color: #2196f3;
+}
+
+/* Loading icon styles */
+.loading-icon {
+  margin-top: -50px;
+}
+
+.loader {
+  width: 35px;
+  height: 35px;
+  margin-top: -6px;
+  border: 5px solid #fff;
+  border-bottom-color: #ff3d00;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

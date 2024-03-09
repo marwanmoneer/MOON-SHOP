@@ -1,0 +1,42 @@
+/* Styles for the 404 page */
+.page_404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    background: #fff;
+    font-family: 'Arvo', serif;
+    text-align: center;
+}
+
+/* Styles for the image within the 404 page */
+.page_404 img {
+    width: 100%;
+}
+
+/* Styles for the background image of the 404 page */
+.four_zero_four_bg {
+    background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    height: 400px;
+    background-position: center;
+}
+
+/* Styles for the h1 element within the 404 page */
+.four_zero_four_bg h1 {
+    font-size: 80px;
+}
+
+/* Styles for the h3 element within the 404 page */
+.four_zero_four_bg h3 {
+    font-size: 80px;
+}
+
+/* Styles for the message (mesg) within the 404 page */
+.mesg {
+    margin-bottom: 20px;
+}
+
+/* Styles for the content box within the 404 page */
+.contant_box_404 {
+    margin-top: -50px;
+}

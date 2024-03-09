@@ -1,0 +1,82 @@
+.dashbord-container {
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+
+.dashbord-container .content .box {
+  border-left: 3px solid transparent;
+}
+
+.dashbord-container .content .box span {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.dashbord-container .content .box p {
+  color: #978888;
+  margin-top: 10px;
+}
+
+.dashbord-container .content .first-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dashbord-container .content .first-box .one {
+  border-color: #e91e63;
+}
+
+.dashbord-container .content .first-box .one span {
+  color: #e91e63;
+}
+
+.dashbord-container .content .first-box .tow {
+  border-color: #009688;
+}
+
+.dashbord-container .content .first-box .tow span {
+  color: #009688;
+}
+
+.dashbord-container .content .secound-box .three {
+  border-color: #ff5722;
+}
+
+.dashbord-container .content .secound-box .three span {
+  color: #ff5722;
+}
+
+.dashbord-container .content .secound-box .four {
+  border-color: #2196f3;
+}
+
+.dashbord-container .content .secound-box .four span {
+  color: #2196f3;
+}
+
+.dashbord-container .content .first-box .box {
+  background-color: #fff;
+  padding: 20px;
+  width: calc((100% - 20px) / 2);
+}
+
+.dashbord-container .content .secound-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dashbord-container .content .secound-box .box {
+  background-color: #fff;
+  padding: 20px;
+  margin-left: 20px;
+  width: calc((100% - 20px) / 2);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.title-dash {
+  color: #fff;
+}

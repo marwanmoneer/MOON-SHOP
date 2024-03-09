@@ -1,0 +1,51 @@
+.stor-nav {
+    position: fixed;
+    z-index: 2;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 80%;
+    max-width:80%;
+    background-color: #0d67b5;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.stor-nav ul {
+    list-style: none;
+}
+
+.stor-nav ul li {
+    display: inline;
+}
+
+.stor-nav ul li a {
+    display: inline-block;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-weight: 400;
+    letter-spacing: .1em;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.stroe-products {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px; 
+    justify-items: center; 
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+@media screen and (min-width: 30em) {
+    .stor-nav ul li a {
+        padding: .5em 1em;
+        letter-spacing: .15em;
+        opacity: .75;
+    }
+    .stor-nav ul li a:hover {
+        opacity: 1;
+    }
+}

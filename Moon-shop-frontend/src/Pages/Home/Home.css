@@ -1,0 +1,39 @@
+
+.hero{
+    height:450px;
+    width:100%;
+    max-width:100%;
+    background-image:linear-gradient(rgba(38, 43, 57, 0.2),rgba(38, 43, 57, 0.5)),url('../../assets/Images/hero.png');
+    background-size:cover;
+    background-position:center;
+  }
+  
+  .hero .container-hero{
+    padding:20px;
+    position:relative;
+    top:50%;
+    transform:translateY(-50%);
+  }
+  
+  .hero h1{
+    font-size: calc(2rem + 3vw);
+    margin-bottom:8px;
+    color:white;
+    font-weight: 500;
+  }
+  
+  .hero a{
+    font-size: calc(1rem + 1vw);
+    margin-bottom:20px;
+    color:white;
+  }
+  
+  .hero .shop-now{
+    display:block;
+    text-align:center;
+    background-color:black;
+    padding:10px 0px;
+    border-radius:3px;
+    width:150px;
+    text-decoration:none;
+  }

@@ -1,0 +1,24 @@
+/* 
+The following CSS code defines styles for a layout structure.
+
+.layout-container:
+- Uses flexbox to create a vertical column layout.
+- `display: flex;` makes the container a flex container.
+- `flex-direction: column;` arranges the children in a column.
+- `min-height: 100vh;` ensures that the container takes at least the full height of the viewport.
+
+.main-content:
+- Takes up the available space in the flex container.
+- `flex: 1;` allows the main content to expand and fill the remaining vertical space.
+
+Note: The code is well-commented, providing clear explanations for each style rule.
+*/
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1; 
+}

@@ -1,0 +1,46 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  opacity: 1;
+}
+
+.overlay.hidden {
+  display: none;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  /* width: 80%; */
+  width: fit-content;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+
+
+
+.content {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+  .popup {
+    width: 70%;
+  }
+}
+
+.images-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 150px);
+  grid-gap: 16px;
+}
